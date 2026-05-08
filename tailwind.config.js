@@ -20,3 +20,4 @@ module.exports = {
   plugins: [],
 };
 
+// buat jalanin node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./dist/output.css --watch

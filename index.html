@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
-    <link rel="stylesheet" href="src/output.css"/>
+    <link rel="stylesheet" href="dist/output.css"/>
 </head>
 <body>
 
-    <!-- Header start -->
+    <!-- Navbar start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
@@ -34,7 +34,7 @@
                                 <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
                             </li>
                         </ul>
                     </nav>
@@ -42,9 +42,9 @@
             </div>
         </div>
     </header>
-    <!-- Header end -->
+    <!-- Navbar end -->
 
-    <!-- Hero section start -->
+    <!-- Beranda start -->
     <section id="home" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
@@ -67,9 +67,9 @@
             </div>
         </div>
     </section>
-    <!-- Hero section end -->
+    <!-- Beranda end -->
 
-    <!-- About section start -->
+    <!-- Tentang saya section start -->
     <section id="about" class="pt-36 pb-32">
         <div class="container">
             <div class="flex flex-wrap">
@@ -102,28 +102,34 @@
             </div>
         </div>
     </section>
-    <!-- About section end -->
+    <!-- Tentang saya section end -->
 
     <!-- Portofolio section start -->
     <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w xl mx-auto text-center mb-16">
+                <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4">Project</h2>
-                    <p class="font-medium text-md text-secondary">Sebuah kumpulan proyek yang telah berhasil saya selesaikan. Tiap proyek menonjolkan beragam kemampuan serta pengalaman yang saya miliki.</p>
+                    <p class="font-medium text-md text-secondary mb-8">Sebuah kumpulan proyek yang telah berhasil saya selesaikan. Tiap proyek menonjolkan beragam kemampuan serta pengalaman yang saya miliki.</p>
+
+                    <div class="flex justify-center mb-10 gap-4">
+                        <button class="filter-btn px-4 py-2 bg-primary text-white rounded-full" data-filter="all">Semua</button>
+                        <button class="filter-btn px-4 py-2 bg-slate-300 rounded-full" data-filter="web">Web</button>
+                        <button class="filter-btn px-4 py-2 bg-slate-300 rounded-full" data-filter="uiux">UI/UX</button>
+                    </div>
                 </div>
             </div>
 
             <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2 project-item" data-category="web">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="src/img/portofolio/webperpusuntag.jpeg" alt="Web perpustakaan" width="w-full"/>
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web perpustakaan</h3>
                     <p class="font-medium text-base text-secondary">Web perpustakaan ini dirancang untuk memberikan akses yang mudah dan efisien bagi pengguna untuk melihat katalog buku perpustakaan serta status pinjaman.</p>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
+                <div class="mb-12 p-4 md:w-1/2 project-item" data-category="uiux">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="src/img/portofolio/webshoesheavenn.png" alt="Web perpustakaan" width="w-full"/>
                     </div>
@@ -140,7 +146,7 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+                    <h4 class="font-semibold text-lg text-primary mb-2">Kontak</h4>
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
                 </div>
             </div>
@@ -188,7 +194,7 @@
                             <a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
                         </li>
                         <li>
-                            <a href="#potofolio" class="inline-block text-base hover:text-primary mb-3">Portofolio</a>
+                            <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">Portofolio</a>
                         </li>
                         <li>
                             <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
